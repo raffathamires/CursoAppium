@@ -1,16 +1,16 @@
 package br.com.raffathamires.test;
 
-import br.com.raffathamires.core.DriverFactory;
+import br.com.raffathamires.core.BaseTest;
+
 import br.com.raffathamires.page.FormularioPage;
 import br.com.raffathamires.page.MenuPage;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.net.MalformedURLException;
 
-public class FormularioTeste {
+public class FormularioTeste extends BaseTest {
 
     private MenuPage menuPage = new MenuPage();
     private FormularioPage formularioPage = new FormularioPage();
@@ -18,11 +18,6 @@ public class FormularioTeste {
     @Before
     public void inicializarAppium() throws MalformedURLException {
         menuPage.acessarFormulario();
-    }
-
-    @After
-    public void tearDown() {
-        DriverFactory.killDriver();
     }
 
     @Test

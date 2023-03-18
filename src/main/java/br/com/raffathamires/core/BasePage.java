@@ -1,12 +1,10 @@
 package br.com.raffathamires.core;
 
-import static br.com.raffathamires.core.DriverFactory.getDriver;
-
-import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
 
-public class DSL {
+import static br.com.raffathamires.core.DriverFactory.getDriver;
 
+public class BasePage {
     public void escrever(By by, String texto) {
         getDriver().findElement(by).sendKeys(texto);
     }
