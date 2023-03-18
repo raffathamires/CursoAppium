@@ -1,14 +1,18 @@
 package br.com.raffathamires.test;
 
 import br.com.raffathamires.core.BaseTest;
-
+import br.com.raffathamires.core.DriverFactory;
 import br.com.raffathamires.page.FormularioPage;
 import br.com.raffathamires.page.MenuPage;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
+import java.util.concurrent.TimeUnit;
 
 public class FormularioTeste extends BaseTest {
 
@@ -71,6 +75,22 @@ public class FormularioTeste extends BaseTest {
         Assert.assertEquals("Console: switch", formularioPage.obterConsoleCadastrado());
         Assert.assertTrue(formularioPage.obterSwitchCadastrado().endsWith("Off"));
         Assert.assertTrue(formularioPage.obterCheckBoxCadastrado().endsWith("Marcado"));
+
+    }
+
+    @Test
+    public void deveRealizarCadastroDemorado() throws MalformedURLException {
+
+        formularioPage.escreverNome("Raffaela");
+
+        DriverFactory.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+
+        formularioPage.salvarDemorado();
+
+        WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Nome: Raffaela']")));
+
+        Assert.assertEquals("Nome: Raffaela", formularioPage.obterNomeCadastrado());
 
     }
 

@@ -42,6 +42,10 @@ public class FormularioPage extends BasePage {
         clicarPorTexto("SALVAR");
     }
 
+    public void salvarDemorado(){
+        clicarPorTexto("SALVAR DEMORADO");
+    }
+
     public String obterNomeCadastrado(){
         return obterTexto(By.xpath("//*[starts-with(@text,'Nome:')]"));
     }
