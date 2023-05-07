@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94ae3421-7423-4f62-ae8c-d3f868d2101f" name="Changes" comment="Trabalhando com esperas">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/page/SplashPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/test/SplashTeste.java" afterDir="false" />
+    <list default="true" id="94ae3421-7423-4f62-ae8c-d3f868d2101f" name="Changes" comment="Trabalhando com splash">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/page/AbasPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/page/AlertaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/test/AbasTeste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/test/AlertTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/raffathamires/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/raffathamires/core/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/page/MenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/raffathamires/page/MenuPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +66,8 @@
       <recent name="br.com.raffathamires.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SplashTeste.deveAguardarSplashSumir">
-    <configuration name="FormularioTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AbasTeste.deveInteragirComAbas">
+    <configuration name="AbasTeste.deveInteragirComAbas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CursoAppium" />
       <extension name="coverage">
         <pattern>
@@ -75,29 +76,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.raffathamires.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.raffathamires.test.FormularioTeste" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FormularioTeste.deveInteragirSwitchCheckBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CursoAppium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.raffathamires.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.raffathamires.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.raffathamires.test.FormularioTeste" />
-      <option name="METHOD_NAME" value="deveInteragirSwitchCheckBox" />
+      <option name="MAIN_CLASS_NAME" value="br.com.raffathamires.test.AbasTeste" />
+      <option name="METHOD_NAME" value="deveInteragirComAbas" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormularioTeste.deveRealizarCadastro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CursoAppium" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +92,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.raffathamires.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.raffathamires.test.FormularioTeste" />
-      <option name="METHOD_NAME" value="deveRealizarCadastro" />
+      <option name="MAIN_CLASS_NAME" value="br.com.raffathamires.test.AlertTeste" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertTeste.deveConfirmarAlerta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CursoAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.raffathamires.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.raffathamires.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.raffathamires.test.AlertTeste" />
+      <option name="METHOD_NAME" value="deveConfirmarAlerta" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AbasTeste.deveInteragirComAbas" />
+        <item itemvalue="JUnit.AlertTeste.deveConfirmarAlerta" />
+        <item itemvalue="JUnit.AlertTeste" />
         <item itemvalue="JUnit.SplashTeste.deveAguardarSplashSumir" />
         <item itemvalue="JUnit.FormularioTeste.deveRealizarCadastroDemorado" />
-        <item itemvalue="JUnit.FormularioTeste" />
-        <item itemvalue="JUnit.FormularioTeste.deveRealizarCadastro" />
-        <item itemvalue="JUnit.FormularioTeste.deveInteragirSwitchCheckBox" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679156712246</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Trabalhando com splash">
+      <created>1679525428852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679525428852</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,7 +201,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Herança e screenshots" />
     <MESSAGE value="Trabalhando com esperas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trabalhando com esperas" />
+    <MESSAGE value="Trabalhando com splash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trabalhando com splash" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
