@@ -94,4 +94,12 @@ public class FormularioTeste extends BaseTest {
 
     }
 
+    @Test
+    public void deveAlterarData(){
+        formularioPage.clicarPorTexto("01/01/2000");
+        formularioPage.clicarPorTexto("20");
+        formularioPage.clicarPorTexto("OK");
+        Assert.assertTrue(formularioPage.existeElementoPorTexto("20/01/2000"));
+    }
+
 }
